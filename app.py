@@ -217,7 +217,7 @@ with tab_ics:
                 st.download_button(
                     "⬇️ دانلود فایل تقویم (.ics)",
                     data=payload,
-                    file_name="daroyar-reminders.ics",
+                    file_name="Med-Assist-reminders.ics",
                     mime="text/calendar",
                 )
                 for e in clean:

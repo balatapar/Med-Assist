@@ -1,4 +1,4 @@
-# Dockerfile for Daroyar - Streamlit app
+# Dockerfile for Med-Assist - Streamlit app
 FROM python:3.12-slim
 
 # Install system dependencies
