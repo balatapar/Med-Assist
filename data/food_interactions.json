@@ -1,0 +1,185 @@
+{
+ "grapefruit": {
+  "fa": "گریپ‌فروت و آب گریپ‌فروت",
+  "severity": "danger",
+  "drugs": [
+   "atorvastatin",
+   "simvastatin",
+   "amiodarone",
+   "carbamazepine",
+   "colchicine",
+   "nifedipine",
+   "amlodipine",
+   "diltiazem",
+   "sildenafil",
+   "quetiapine",
+   "itraconazole"
+  ],
+  "why_fa": "گریپ‌فروت آنزیم روده را مهار می‌کند و سطح دارو در خون تا چند برابر بالا می‌رود",
+  "do_fa": "در تمام دوره درمان گریپ‌فروت و آب آن را کامل حذف کنید؛ فاصله انداختن کافی نیست"
+ },
+ "dairy": {
+  "fa": "لبنیات (شیر، ماست، پنیر، دوغ)",
+  "severity": "moderate",
+  "drugs": [
+   "ciprofloxacin",
+   "levofloxacin",
+   "doxycycline",
+   "alendronate",
+   "levothyroxine",
+   "bisacodyl",
+   "ferrous-sulfate",
+   "mesalazine"
+  ],
+  "why_fa": "کلسیم لبنیات به دارو می‌چسبد و جذب آن را کم می‌کند",
+  "do_fa": "دارو را ۲ ساعت قبل یا ۴ ساعت بعد از لبنیات بخورید"
+ },
+ "caffeine": {
+  "fa": "کافئین (چای پررنگ، قهوه، نوشابه، انرژی‌زا)",
+  "severity": "moderate",
+  "drugs": [
+   "theophylline",
+   "levothyroxine",
+   "alprazolam",
+   "clonazepam",
+   "zolpidem",
+   "lithium",
+   "methylphenidate",
+   "ferrous-sulfate",
+   "alendronate",
+   "fluvoxamine",
+   "melatonin",
+   "salbutamol"
+  ],
+  "why_fa": "کافئین اثر داروهای آرام‌بخش را کم و اثر محرک‌ها را زیاد می‌کند و جذب آهن و تیروئید را می‌بندد",
+  "do_fa": "چای و قهوه را حداقل یک ساعت از دارو دور کنید و بعد از عصر کم کنید"
+ },
+ "alcohol": {
+  "fa": "الکل",
+  "severity": "danger",
+  "drugs": [
+   "metronidazole",
+   "acetaminophen",
+   "tramadol",
+   "codeine",
+   "morphine",
+   "alprazolam",
+   "clonazepam",
+   "diazepam",
+   "lorazepam",
+   "zolpidem",
+   "metformin",
+   "warfarin",
+   "ibuprofen",
+   "naproxen",
+   "diclofenac",
+   "sertraline",
+   "quetiapine",
+   "methotrexate",
+   "isoniazid"
+  ],
+  "why_fa": "با مترونیدازول واکنش شدید تهوع و تپش قلب می‌دهد، با مسکن‌ها و آرام‌بخش‌ها تنفس را کند می‌کند و به کبد و معده آسیب می‌زند",
+  "do_fa": "در تمام دوره درمان و تا ۳ روز بعد از مترونیدازول کامل پرهیز کنید"
+ },
+ "vitamin-k-greens": {
+  "fa": "سبزیجات برگ‌سبز (کلم، اسفناج، جعفری، کاهو)",
+  "severity": "moderate",
+  "drugs": [
+   "warfarin"
+  ],
+  "why_fa": "ویتامین K این سبزی‌ها اثر وارفارین را کم می‌کند",
+  "do_fa": "حذفشان نکنید؛ فقط مقدار روزانه را یکنواخت نگه دارید تا INR ثابت بماند"
+ },
+ "high-protein": {
+  "fa": "غذای پرپروتئین (گوشت، مرغ، تخم‌مرغ زیاد در یک وعده)",
+  "severity": "moderate",
+  "drugs": [
+   "levodopa-carbidopa"
+  ],
+  "why_fa": "پروتئین با دارو برای عبور از روده رقابت می‌کند",
+  "do_fa": "دارو را ۳۰ دقیقه قبل غذا و پروتئین را بیشتر در وعده شب بخورید"
+ },
+ "salty-food": {
+  "fa": "نمک و غذای شور",
+  "severity": "moderate",
+  "drugs": [
+   "lithium",
+   "furosemide",
+   "hydrochlorothiazide",
+   "enalapril",
+   "lisinopril",
+   "captopril",
+   "losartan",
+   "valsartan",
+   "amlodipine",
+   "prednisolone"
+  ],
+  "why_fa": "نمک زیاد فشار خون را بالا می‌برد و تعادل لیتیوم را بر هم می‌زند",
+  "do_fa": "مصرف نمک را ثابت و کم نگه دارید؛ رژیم بی‌نمک ناگهانی هم برای لیتیوم خطر دارد"
+ },
+ "potassium-rich": {
+  "fa": "غذای پرپتاسیم (موز، پرتقال، خرما، آب‌میوه، نمک رژیمی)",
+  "severity": "moderate",
+  "drugs": [
+   "spironolactone",
+   "enalapril",
+   "lisinopril",
+   "captopril",
+   "losartan",
+   "valsartan",
+   "potassium-chloride"
+  ],
+  "why_fa": "پتاسیم خون می‌تواند خیلی بالا برود و ریتم قلب را بر هم بزند",
+  "do_fa": "نمک رژیمی پتاسیم‌دار مصرف نکنید و در میوه‌های پرپتاسیم زیاده‌روی نکنید"
+ },
+ "grape-juice-acid": {
+  "fa": "آب‌میوه‌های اسیدی (پرتقال، سیب، انگور)",
+  "severity": "caution",
+  "drugs": [
+   "fexofenadine",
+   "alendronate",
+   "omeprazole",
+   "pantoprazole",
+   "esomeprazole"
+  ],
+  "why_fa": "آب‌میوه جذب این داروها را کم می‌کند",
+  "do_fa": "دارو را فقط با آب ساده بخورید"
+ },
+ "fatty-food": {
+  "fa": "غذای چرب و سرخ‌کردنی",
+  "severity": "caution",
+  "drugs": [
+   "sildenafil",
+   "vitamin-d",
+   "omega-3",
+   "itraconazole"
+  ],
+  "why_fa": "چربی جذب برخی داروها را زیاد و شروع اثر بعضی را دیر می‌کند",
+  "do_fa": "ویتامین D و امگا۳ همراه غذای چرب بهتر جذب می‌شود؛ سیلدنافیل را با غذای سنگین نخورید"
+ },
+ "licorice": {
+  "fa": "شیرین‌بیان",
+  "severity": "moderate",
+  "drugs": [
+   "digoxin",
+   "furosemide",
+   "hydrochlorothiazide",
+   "prednisolone",
+   "spironolactone"
+  ],
+  "why_fa": "شیرین‌بیان پتاسیم را کم و فشار را بالا می‌برد",
+  "do_fa": "مصرف نکنید"
+ },
+ "fiber-supplement": {
+  "fa": "سبوس و مکمل فیبر",
+  "severity": "caution",
+  "drugs": [
+   "levothyroxine",
+   "digoxin",
+   "warfarin",
+   "metformin"
+  ],
+  "why_fa": "فیبر زیاد جذب دارو را کم می‌کند",
+  "do_fa": "۲ ساعت فاصله بدهید"
+ }
+}

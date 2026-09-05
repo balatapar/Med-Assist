@@ -1,0 +1,15 @@
+.git
+__pycache__
+*.pyc
+.venv
+venv
+env
+*.log
+.DS_Store
+*.sqlite
+*.db
+_test_*.py
+_smoke.py
+_quick.py
+*.zip
+*.tar.gz

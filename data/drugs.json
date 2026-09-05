@@ -1,0 +1,2853 @@
+{
+ "acetaminophen": {
+  "aliases": [
+   "acetaminophen",
+   "apotel",
+   "paracetamol",
+   "استامينوفن",
+   "استامینوفن",
+   "تیلنول کدئین",
+   "پاراسیتامول"
+  ],
+  "brands_fa": [
+   "تیلنول",
+   "پاراستامول"
+  ],
+  "class": "analgesic",
+  "en": "Acetaminophen",
+  "fa": "استامینوفن",
+  "food": "any",
+  "note_fa": "حداکثر ۳ گرم در شبانه‌روز؛ مراقب داروهای ترکیبی سرماخوردگی",
+  "timing": [
+   "any"
+  ]
+ },
+ "acyclovir": {
+  "aliases": [
+   "acyclovir",
+   "acyclovir",
+   "acyclovir"
+  ],
+  "brands_fa": [
+   "زوویراکس"
+  ],
+  "class": "antiviral",
+  "en": "Acyclovir",
+  "fa": "آسیکلوویر",
+  "food": "any",
+  "note_fa": "آب زیاد",
+  "timing": [
+   "morning",
+   "noon",
+   "night"
+  ]
+ },
+ "alendronate": {
+  "aliases": [
+   "alendronate",
+   "alendronate",
+   "alendronate"
+  ],
+  "brands_fa": [
+   "فوسامکس"
+  ],
+  "class": "bisphosphonate",
+  "en": "Alendronate",
+  "fa": "آلندرونات",
+  "food": "empty",
+  "note_fa": "ناشتا با یک لیوان آب ساده؛ ۳۰ دقیقه ننشینید و دراز نکشید",
+  "timing": [
+   "morning"
+  ]
+ },
+ "allopurinol": {
+  "aliases": [
+   "allopurinol",
+   "allopurinol",
+   "allopurinol"
+  ],
+  "brands_fa": [
+   "زیلوریک"
+  ],
+  "class": "antigout",
+  "en": "Allopurinol",
+  "fa": "آلوپورینول",
+  "food": "after",
+  "note_fa": "بعد غذا با آب زیاد",
+  "timing": [
+   "morning"
+  ]
+ },
+ "alprazolam": {
+  "aliases": [
+   "alprazolam",
+   "alprazolam",
+   "alprazolam"
+  ],
+  "brands_fa": [
+   "زاناکس"
+  ],
+  "class": "benzodiazepine",
+  "en": "Alprazolam",
+  "fa": "آلپرازولام",
+  "food": "any",
+  "note_fa": "وابستگی‌آور؛ با الکل هرگز",
+  "timing": [
+   "night"
+  ]
+ },
+ "amiodarone": {
+  "aliases": [
+   "amiodarone",
+   "amiodarone",
+   "amiodarone"
+  ],
+  "brands_fa": [
+   "کوردارون"
+  ],
+  "class": "antiarrhythmic",
+  "en": "Amiodarone",
+  "fa": "آمیودارون",
+  "food": "any",
+  "note_fa": "گریپ‌فروت ممنوع؛ آفتاب را کم کنید",
+  "timing": [
+   "morning"
+  ]
+ },
+ "amitriptyline": {
+  "aliases": [
+   "amitriptyline",
+   "amitriptyline",
+   "amitriptyline"
+  ],
+  "brands_fa": [
+   "آمی‌تریپتیلین"
+  ],
+  "class": "tca",
+  "en": "Amitriptyline",
+  "fa": "آمی‌تریپتیلین",
+  "food": "any",
+  "note_fa": "شب؛ خشکی دهان شایع",
+  "timing": [
+   "bedtime"
+  ]
+ },
+ "amlodipine": {
+  "aliases": [
+   "amlodipine",
+   "amlodipine",
+   "amlodipine"
+  ],
+  "brands_fa": [
+   "نورواسک"
+  ],
+  "class": "ccb",
+  "en": "Amlodipine",
+  "fa": "آملودیپین",
+  "food": "any",
+  "note_fa": "ورم مچ پا را گزارش کنید",
+  "timing": [
+   "night"
+  ]
+ },
+ "amoxicillin": {
+  "aliases": [
+   "amoxicillin",
+   "amoxicillin",
+   "amoxicillin"
+  ],
+  "brands_fa": [
+   "آموکسی‌سیلین"
+  ],
+  "class": "antibiotic",
+  "en": "Amoxicillin",
+  "fa": "آموکسی‌سیلین",
+  "food": "any",
+  "note_fa": "دوره را کامل کنید",
+  "timing": [
+   "morning",
+   "noon",
+   "night"
+  ]
+ },
+ "apixaban": {
+  "aliases": [
+   "apixaban",
+   "apixaban",
+   "apixaban"
+  ],
+  "brands_fa": [
+   "الیکوئیس"
+  ],
+  "class": "anticoagulant",
+  "en": "Apixaban",
+  "fa": "آپیکسابان",
+  "food": "any",
+  "note_fa": "دو بار در روز با فاصله ۱۲ ساعت",
+  "timing": [
+   "morning",
+   "night"
+  ]
+ },
+ "aripiprazole": {
+  "aliases": [
+   "aripiprazole",
+   "aripiprazole",
+   "aripiprazole"
+  ],
+  "brands_fa": [
+   "ابیلیفای"
+  ],
+  "class": "antipsychotic",
+  "en": "Aripiprazole",
+  "fa": "آری‌پیپرازول",
+  "food": "any",
+  "note_fa": "صبح",
+  "timing": [
+   "morning"
+  ]
+ },
+ "aspirin": {
+  "aliases": [
+   "acetylsalicylic acid",
+   "asa",
+   "aspirin",
+   "آسپرین بچه",
+   "استیل سالیسیلیک"
+  ],
+  "brands_fa": [
+   "آسپیرین",
+   "ای‌اس‌ای"
+  ],
+  "class": "antiplatelet",
+  "en": "Aspirin",
+  "fa": "آسپرین",
+  "food": "after",
+  "note_fa": "بعد از غذا با آب زیاد؛ نجویید",
+  "timing": [
+   "morning"
+  ]
+ },
+ "atenolol": {
+  "aliases": [
+   "atenolol",
+   "atenolol",
+   "atenolol"
+  ],
+  "brands_fa": [
+   "تنورمین"
+  ],
+  "class": "beta-blocker",
+  "en": "Atenolol",
+  "fa": "آتنولول",
+  "food": "any",
+  "note_fa": "نبض را چک کنید",
+  "timing": [
+   "morning"
+  ]
+ },
+ "atorvastatin": {
+  "aliases": [
+   "atorvastatin",
+   "atorvastatin",
+   "atorvastatin"
+  ],
+  "brands_fa": [
+   "لیپیتور"
+  ],
+  "class": "statin",
+  "en": "Atorvastatin",
+  "fa": "آتورواستاتین",
+  "food": "any",
+  "note_fa": "شب بهتر است؛ گریپ‌فروت را محدود کنید",
+  "timing": [
+   "night"
+  ]
+ },
+ "azithromycin": {
+  "aliases": [
+   "azithromycin",
+   "azithromycin",
+   "azithromycin"
+  ],
+  "brands_fa": [
+   "زیترومکس"
+  ],
+  "class": "antibiotic",
+  "en": "Azithromycin",
+  "fa": "آزیترومایسین",
+  "food": "empty",
+  "note_fa": "یک ساعت قبل یا ۲ ساعت بعد غذا",
+  "timing": [
+   "morning"
+  ]
+ },
+ "baclofen": {
+  "aliases": [
+   "baclofen",
+   "baclofen",
+   "baclofen"
+  ],
+  "brands_fa": [
+   "لیورسال"
+  ],
+  "class": "muscle-relaxant",
+  "en": "Baclofen",
+  "fa": "باکلوفن",
+  "food": "after",
+  "note_fa": "قطع ناگهانی نکنید",
+  "timing": [
+   "morning",
+   "noon",
+   "night"
+  ]
+ },
+ "bisacodyl": {
+  "aliases": [
+   "bisacodyl",
+   "bisacodyl",
+   "bisacodyl"
+  ],
+  "brands_fa": [
+   "دولکولاکس"
+  ],
+  "class": "laxative",
+  "en": "Bisacodyl",
+  "fa": "بیزاکودیل",
+  "food": "any",
+  "note_fa": "با لبنیات و آنتی‌اسید نخورید",
+  "timing": [
+   "bedtime"
+  ]
+ },
+ "budesonide-formoterol": {
+  "aliases": [
+   "budesonide formoterol",
+   "budesonide-formoterol",
+   "budesonideformoterol",
+   "symbicort",
+   "بودزوناید",
+   "سیمبیکورت",
+   "فورموترول"
+  ],
+  "brands_fa": [
+   "سیمبیکورت"
+  ],
+  "class": "inhaler",
+  "en": "Budesonide Formoterol",
+  "fa": "بودزوناید-فورموترول",
+  "food": "any",
+  "note_fa": "بعد از هر بار دهان را بشویید",
+  "timing": [
+   "morning",
+   "night"
+  ]
+ },
+ "bupropion": {
+  "aliases": [
+   "bupropion",
+   "bupropion",
+   "bupropion"
+  ],
+  "brands_fa": [
+   "ولبوترین"
+  ],
+  "class": "antidepressant",
+  "en": "Bupropion",
+  "fa": "بوپروپیون",
+  "food": "any",
+  "note_fa": "بعد از ساعت ۴ عصر نخورید",
+  "timing": [
+   "morning"
+  ]
+ },
+ "calcium-d": {
+  "aliases": [
+   "calcium",
+   "calcium carbonate",
+   "calcium d",
+   "calcium-d",
+   "calciumd",
+   "کربنات کلسیم",
+   "کلسیم",
+   "کلسیم د"
+  ],
+  "brands_fa": [
+   "کلسیم دی"
+  ],
+  "class": "supplement",
+  "en": "Calcium D",
+  "fa": "کلسیم دی",
+  "food": "after",
+  "note_fa": "با لووتیروکسین و آهن ۴ ساعت فاصله",
+  "timing": [
+   "noon",
+   "night"
+  ]
+ },
+ "captopril": {
+  "aliases": [
+   "captopril",
+   "captopril",
+   "captopril"
+  ],
+  "brands_fa": [
+   "کاپوتن"
+  ],
+  "class": "acei",
+  "en": "Captopril",
+  "fa": "کاپتوپریل",
+  "food": "empty",
+  "note_fa": "یک ساعت قبل غذا",
+  "timing": [
+   "morning",
+   "night"
+  ]
+ },
+ "carbamazepine": {
+  "aliases": [
+   "carbamazepine",
+   "carbamazepine",
+   "carbamazepine"
+  ],
+  "brands_fa": [
+   "تگرتول"
+  ],
+  "class": "anticonvulsant",
+  "en": "Carbamazepine",
+  "fa": "کاربامازپین",
+  "food": "after",
+  "note_fa": "گریپ‌فروت ممنوع",
+  "timing": [
+   "morning",
+   "night"
+  ]
+ },
+ "carvedilol": {
+  "aliases": [
+   "carvedilol",
+   "carvedilol",
+   "carvedilol"
+  ],
+  "brands_fa": [
+   "کارویدیلول"
+  ],
+  "class": "beta-blocker",
+  "en": "Carvedilol",
+  "fa": "کارودیلول",
+  "food": "with",
+  "note_fa": "همراه غذا برای کاهش سرگیجه",
+  "timing": [
+   "morning",
+   "night"
+  ]
+ },
+ "cefixime": {
+  "aliases": [
+   "cefixime",
+   "cefixime",
+   "cefixime"
+  ],
+  "brands_fa": [
+   "سفیکسیم"
+  ],
+  "class": "antibiotic",
+  "en": "Cefixime",
+  "fa": "سفیکسیم",
+  "food": "with",
+  "note_fa": "همراه غذا",
+  "timing": [
+   "morning",
+   "night"
+  ]
+ },
+ "celecoxib": {
+  "aliases": [
+   "celecoxib",
+   "celecoxib",
+   "celecoxib"
+  ],
+  "brands_fa": [
+   "سلبرکس"
+  ],
+  "class": "nsaid",
+  "en": "Celecoxib",
+  "fa": "سلکوکسیب",
+  "food": "after",
+  "note_fa": "بعد غذا",
+  "timing": [
+   "morning",
+   "night"
+  ]
+ },
+ "cephalexin": {
+  "aliases": [
+   "cephalexin",
+   "cephalexin",
+   "cephalexin"
+  ],
+  "brands_fa": [
+   "کفلکس"
+  ],
+  "class": "antibiotic",
+  "en": "Cephalexin",
+  "fa": "سفالکسین",
+  "food": "any",
+  "note_fa": "فاصله منظم",
+  "timing": [
+   "morning",
+   "noon",
+   "night"
+  ]
+ },
+ "cetirizine": {
+  "aliases": [
+   "cetirizine",
+   "cetirizine",
+   "cetirizine"
+  ],
+  "brands_fa": [
+   "زیرتک"
+  ],
+  "class": "antihistamine",
+  "en": "Cetirizine",
+  "fa": "ستیریزین",
+  "food": "any",
+  "note_fa": "شب؛ ممکن است خواب‌آور باشد",
+  "timing": [
+   "night"
+  ]
+ },
+ "chlorpheniramine": {
+  "aliases": [
+   "chlorpheniramine",
+   "chlorpheniramine",
+   "chlorpheniramine"
+  ],
+  "brands_fa": [
+   "کلرفنیرامین"
+  ],
+  "class": "antihistamine",
+  "en": "Chlorpheniramine",
+  "fa": "کلرفنیرامین",
+  "food": "any",
+  "note_fa": "خواب‌آور",
+  "timing": [
+   "bedtime"
+  ]
+ },
+ "ciprofloxacin": {
+  "aliases": [
+   "ciprofloxacin",
+   "ciprofloxacin",
+   "ciprofloxacin"
+  ],
+  "brands_fa": [
+   "سیپروبای"
+  ],
+  "class": "antibiotic",
+  "en": "Ciprofloxacin",
+  "fa": "سیپروفلوکساسین",
+  "food": "empty",
+  "note_fa": "با لبنیات و آهن ۲ ساعت فاصله؛ آب زیاد",
+  "timing": [
+   "morning",
+   "night"
+  ]
+ },
+ "citalopram": {
+  "aliases": [
+   "citalopram",
+   "citalopram",
+   "citalopram"
+  ],
+  "brands_fa": [
+   "سیپرام"
+  ],
+  "class": "ssri",
+  "en": "Citalopram",
+  "fa": "سیتالوپرام",
+  "food": "any",
+  "note_fa": "سر ساعت ثابت",
+  "timing": [
+   "morning"
+  ]
+ },
+ "clarithromycin": {
+  "aliases": [
+   "clarithromycin",
+   "clarithromycin",
+   "clarithromycin"
+  ],
+  "brands_fa": [
+   "کلاسید"
+  ],
+  "class": "antibiotic",
+  "en": "Clarithromycin",
+  "fa": "کلاریترومایسین",
+  "food": "any",
+  "note_fa": "تداخل زیاد با استاتین‌ها",
+  "timing": [
+   "morning",
+   "night"
+  ]
+ },
+ "clindamycin": {
+  "aliases": [
+   "clindamycin",
+   "clindamycin",
+   "clindamycin"
+  ],
+  "brands_fa": [
+   "دالاسین"
+  ],
+  "class": "antibiotic",
+  "en": "Clindamycin",
+  "fa": "کلیندامایسین",
+  "food": "after",
+  "note_fa": "با آب زیاد",
+  "timing": [
+   "morning",
+   "noon",
+   "night"
+  ]
+ },
+ "clonazepam": {
+  "aliases": [
+   "clonazepam",
+   "clonazepam",
+   "clonazepam"
+  ],
+  "brands_fa": [
+   "ریواتریل"
+  ],
+  "class": "benzodiazepine",
+  "en": "Clonazepam",
+  "fa": "کلونازپام",
+  "food": "any",
+  "note_fa": "خواب‌آلودگی؛ رانندگی احتیاط",
+  "timing": [
+   "bedtime"
+  ]
+ },
+ "clopidogrel": {
+  "aliases": [
+   "clopidogrel",
+   "clopidogrel",
+   "clopidogrel"
+  ],
+  "brands_fa": [
+   "پلاویکس"
+  ],
+  "class": "antiplatelet",
+  "en": "Clopidogrel",
+  "fa": "کلوپیدوگرل",
+  "food": "any",
+  "note_fa": "با معده پر بهتر تحمل می‌شود",
+  "timing": [
+   "morning"
+  ]
+ },
+ "co-amoxiclav": {
+  "aliases": [
+   "amoxicillin clavulanate",
+   "augmentin",
+   "co amoxiclav",
+   "co-amoxiclav",
+   "coamoxiclav",
+   "آگمنتین",
+   "کو آموکسی کلاو",
+   "کوآموکسیکلاو"
+  ],
+  "brands_fa": [
+   "آگمنتین"
+  ],
+  "class": "antibiotic",
+  "en": "Co Amoxiclav",
+  "fa": "کوآموکسی‌کلاو",
+  "food": "with",
+  "note_fa": "همراه غذا برای کاهش اسهال",
+  "timing": [
+   "morning",
+   "night"
+  ]
+ },
+ "codeine": {
+  "aliases": [
+   "codeine",
+   "codeine",
+   "codeine"
+  ],
+  "brands_fa": [
+   "کدئین"
+  ],
+  "class": "opioid",
+  "en": "Codeine",
+  "fa": "کدئین",
+  "food": "after",
+  "note_fa": "یبوست‌آور",
+  "timing": [
+   "any"
+  ]
+ },
+ "colchicine": {
+  "aliases": [
+   "colchicine",
+   "colchicine",
+   "colchicine"
+  ],
+  "brands_fa": [
+   "کلشی‌سین"
+  ],
+  "class": "antigout",
+  "en": "Colchicine",
+  "fa": "کلشی‌سین",
+  "food": "any",
+  "note_fa": "گریپ‌فروت ممنوع؛ اسهال شدید را گزارش کنید",
+  "timing": [
+   "morning",
+   "night"
+  ]
+ },
+ "cyclobenzaprine": {
+  "aliases": [
+   "cyclobenzaprine",
+   "cyclobenzaprine",
+   "cyclobenzaprine"
+  ],
+  "brands_fa": [
+   "فلکسریل"
+  ],
+  "class": "muscle-relaxant",
+  "en": "Cyclobenzaprine",
+  "fa": "سیکلوبنزاپرین",
+  "food": "any",
+  "note_fa": "شب",
+  "timing": [
+   "bedtime"
+  ]
+ },
+ "cyproterone": {
+  "aliases": [
+   "cyproterone",
+   "cyproterone",
+   "cyproterone"
+  ],
+  "brands_fa": [
+   "دیان"
+  ],
+  "class": "hormonal",
+  "en": "Cyproterone",
+  "fa": "سایپروترون",
+  "food": "any",
+  "note_fa": "سر ساعت ثابت",
+  "timing": [
+   "night"
+  ]
+ },
+ "dexamethasone": {
+  "aliases": [
+   "dexamethasone",
+   "dexamethasone",
+   "dexamethasone"
+  ],
+  "brands_fa": [
+   "دکسامتازون"
+  ],
+  "class": "corticosteroid",
+  "en": "Dexamethasone",
+  "fa": "دگزامتازون",
+  "food": "after",
+  "note_fa": "بعد غذا صبح",
+  "timing": [
+   "morning"
+  ]
+ },
+ "diazepam": {
+  "aliases": [
+   "diazepam",
+   "diazepam",
+   "diazepam"
+  ],
+  "brands_fa": [
+   "والیوم"
+  ],
+  "class": "benzodiazepine",
+  "en": "Diazepam",
+  "fa": "دیازپام",
+  "food": "any",
+  "note_fa": "قطع ناگهانی نکنید",
+  "timing": [
+   "bedtime"
+  ]
+ },
+ "diclofenac": {
+  "aliases": [
+   "diclofenac",
+   "diclofenac",
+   "diclofenac"
+  ],
+  "brands_fa": [
+   "ولتارن"
+  ],
+  "class": "nsaid",
+  "en": "Diclofenac",
+  "fa": "دیکلوفناک",
+  "food": "after",
+  "note_fa": "بعد غذا؛ معده را می‌آزارد",
+  "timing": [
+   "morning",
+   "night"
+  ]
+ },
+ "dicyclomine": {
+  "aliases": [
+   "dicyclomine",
+   "dicyclomine",
+   "dicyclomine"
+  ],
+  "brands_fa": [
+   "دی‌سیکلومین"
+  ],
+  "class": "antispasmodic",
+  "en": "Dicyclomine",
+  "fa": "دی‌سیکلومین",
+  "food": "before",
+  "note_fa": "قبل غذا",
+  "timing": [
+   "morning",
+   "noon",
+   "night"
+  ]
+ },
+ "digoxin": {
+  "aliases": [
+   "digoxin",
+   "digoxin",
+   "digoxin"
+  ],
+  "brands_fa": [
+   "لانوکسین"
+  ],
+  "class": "cardiac",
+  "en": "Digoxin",
+  "fa": "دیگوکسین",
+  "food": "any",
+  "note_fa": "سر ساعت ثابت؛ نبض کمتر از ۶۰ را گزارش کنید",
+  "timing": [
+   "morning"
+  ]
+ },
+ "diltiazem": {
+  "aliases": [
+   "diltiazem",
+   "diltiazem",
+   "diltiazem"
+  ],
+  "brands_fa": [
+   "هرباسر"
+  ],
+  "class": "ccb",
+  "en": "Diltiazem",
+  "fa": "دیلتیازم",
+  "food": "before",
+  "note_fa": "قبل غذا",
+  "timing": [
+   "morning",
+   "night"
+  ]
+ },
+ "domperidone": {
+  "aliases": [
+   "domperidone",
+   "domperidone",
+   "domperidone"
+  ],
+  "brands_fa": [
+   "موتیلیوم"
+  ],
+  "class": "prokinetic",
+  "en": "Domperidone",
+  "fa": "دومپریدون",
+  "food": "before",
+  "note_fa": "۳۰ دقیقه قبل غذا",
+  "timing": [
+   "morning",
+   "noon",
+   "night"
+  ]
+ },
+ "donepezil": {
+  "aliases": [
+   "donepezil",
+   "donepezil",
+   "donepezil"
+  ],
+  "brands_fa": [
+   "آریسپت"
+  ],
+  "class": "dementia",
+  "en": "Donepezil",
+  "fa": "دونپزیل",
+  "food": "any",
+  "note_fa": "شب",
+  "timing": [
+   "bedtime"
+  ]
+ },
+ "doxycycline": {
+  "aliases": [
+   "doxycycline",
+   "doxycycline",
+   "doxycycline"
+  ],
+  "brands_fa": [
+   "داکسی‌سایکلین"
+  ],
+  "class": "antibiotic",
+  "en": "Doxycycline",
+  "fa": "داکسی‌سایکلین",
+  "food": "after",
+  "note_fa": "با آب زیاد و نشسته؛ لبنیات را جدا کنید؛ آفتاب کم",
+  "timing": [
+   "morning",
+   "night"
+  ]
+ },
+ "duloxetine": {
+  "aliases": [
+   "duloxetine",
+   "duloxetine",
+   "duloxetine"
+  ],
+  "brands_fa": [
+   "سیمبالتا"
+  ],
+  "class": "snri",
+  "en": "Duloxetine",
+  "fa": "دولوکستین",
+  "food": "any",
+  "note_fa": "کپسول را باز نکنید",
+  "timing": [
+   "morning"
+  ]
+ },
+ "empagliflozin": {
+  "aliases": [
+   "empagliflozin",
+   "empagliflozin",
+   "empagliflozin"
+  ],
+  "brands_fa": [
+   "جاردیانس"
+  ],
+  "class": "antidiabetic",
+  "en": "Empagliflozin",
+  "fa": "امپاگلیفلوزین",
+  "food": "any",
+  "note_fa": "آب کافی بنوشید",
+  "timing": [
+   "morning"
+  ]
+ },
+ "enalapril": {
+  "aliases": [
+   "enalapril",
+   "enalapril",
+   "enalapril"
+  ],
+  "brands_fa": [
+   "انالاپریل"
+  ],
+  "class": "acei",
+  "en": "Enalapril",
+  "fa": "انالاپریل",
+  "food": "any",
+  "note_fa": "سرفه خشک شایع است",
+  "timing": [
+   "morning"
+  ]
+ },
+ "escitalopram": {
+  "aliases": [
+   "escitalopram",
+   "escitalopram",
+   "escitalopram"
+  ],
+  "brands_fa": [
+   "سیپرالکس"
+  ],
+  "class": "ssri",
+  "en": "Escitalopram",
+  "fa": "اس‌سیتالوپرام",
+  "food": "any",
+  "note_fa": "صبح یا شب ثابت",
+  "timing": [
+   "morning"
+  ]
+ },
+ "esomeprazole": {
+  "aliases": [
+   "esomeprazole",
+   "esomeprazole",
+   "esomeprazole"
+  ],
+  "brands_fa": [
+   "نکسیوم"
+  ],
+  "class": "ppi",
+  "en": "Esomeprazole",
+  "fa": "ازومپرازول",
+  "food": "before",
+  "note_fa": "قبل صبحانه",
+  "timing": [
+   "morning"
+  ]
+ },
+ "famotidine": {
+  "aliases": [
+   "famotidine",
+   "famotidine",
+   "famotidine"
+  ],
+  "brands_fa": [
+   "فاموتیدین"
+  ],
+  "class": "h2-blocker",
+  "en": "Famotidine",
+  "fa": "فاموتیدین",
+  "food": "any",
+  "note_fa": "شب",
+  "timing": [
+   "night"
+  ]
+ },
+ "ferrous-sulfate": {
+  "aliases": [
+   "fe",
+   "ferrous",
+   "ferrous sulfate",
+   "ferrous-sulfate",
+   "ferroussulfate",
+   "iron",
+   "آهن",
+   "سولفات فرو",
+   "فرفولیک"
+  ],
+  "brands_fa": [
+   "فروس سولفات",
+   "آهن"
+  ],
+  "class": "supplement",
+  "en": "Ferrous Sulfate",
+  "fa": "سولفات آهن",
+  "food": "empty",
+  "note_fa": "با ویتامین C بهتر جذب می‌شود؛ با چای و لبنیات هرگز",
+  "timing": [
+   "noon"
+  ]
+ },
+ "fexofenadine": {
+  "aliases": [
+   "fexofenadine",
+   "fexofenadine",
+   "fexofenadine"
+  ],
+  "brands_fa": [
+   "تلفاست"
+  ],
+  "class": "antihistamine",
+  "en": "Fexofenadine",
+  "fa": "فکسوفنادین",
+  "food": "empty",
+  "note_fa": "با آبمیوه نخورید؛ فقط آب",
+  "timing": [
+   "morning"
+  ]
+ },
+ "finasteride": {
+  "aliases": [
+   "finasteride",
+   "finasteride",
+   "finasteride"
+  ],
+  "brands_fa": [
+   "پروسکار"
+  ],
+  "class": "bph",
+  "en": "Finasteride",
+  "fa": "فیناستراید",
+  "food": "any",
+  "note_fa": "زنان باردار قرص را دست نزنند",
+  "timing": [
+   "morning"
+  ]
+ },
+ "fluconazole": {
+  "aliases": [
+   "fluconazole",
+   "fluconazole",
+   "fluconazole"
+  ],
+  "brands_fa": [
+   "دیفلوکان"
+  ],
+  "class": "antifungal",
+  "en": "Fluconazole",
+  "fa": "فلوکونازول",
+  "food": "any",
+  "note_fa": "تداخل با وارفارین و استاتین",
+  "timing": [
+   "morning"
+  ]
+ },
+ "fluoxetine": {
+  "aliases": [
+   "fluoxetine",
+   "fluoxetine",
+   "fluoxetine"
+  ],
+  "brands_fa": [
+   "پروزاک"
+  ],
+  "class": "ssri",
+  "en": "Fluoxetine",
+  "fa": "فلوکستین",
+  "food": "after",
+  "note_fa": "صبح چون ممکن است بی‌خوابی بدهد",
+  "timing": [
+   "morning"
+  ]
+ },
+ "fluticasone": {
+  "aliases": [
+   "fluticasone",
+   "fluticasone",
+   "fluticasone"
+  ],
+  "brands_fa": [
+   "فلیکسوتاید"
+  ],
+  "class": "inhaler",
+  "en": "Fluticasone",
+  "fa": "فلوتیکازون",
+  "food": "any",
+  "note_fa": "دهان را بشویید تا برفک نگیرید",
+  "timing": [
+   "morning",
+   "night"
+  ]
+ },
+ "fluvoxamine": {
+  "aliases": [
+   "fluvoxamine",
+   "fluvoxamine",
+   "fluvoxamine"
+  ],
+  "brands_fa": [
+   "فوارین"
+  ],
+  "class": "ssri",
+  "en": "Fluvoxamine",
+  "fa": "فلووکسامین",
+  "food": "after",
+  "note_fa": "شب همراه غذا",
+  "timing": [
+   "night"
+  ]
+ },
+ "folic-acid": {
+  "aliases": [
+   "folic-acid",
+   "folic acid",
+   "folicacid"
+  ],
+  "brands_fa": [
+   "اسید فولیک"
+  ],
+  "class": "supplement",
+  "en": "Folic Acid",
+  "fa": "فولیک اسید",
+  "food": "any",
+  "note_fa": "روزانه",
+  "timing": [
+   "morning"
+  ]
+ },
+ "furosemide": {
+  "aliases": [
+   "furosemide",
+   "furosemide",
+   "furosemide"
+  ],
+  "brands_fa": [
+   "لازیکس"
+  ],
+  "class": "diuretic",
+  "en": "Furosemide",
+  "fa": "فوروزماید",
+  "food": "any",
+  "note_fa": "صبح تا شب‌ها بیدار نشوید",
+  "timing": [
+   "morning"
+  ]
+ },
+ "gabapentin": {
+  "aliases": [
+   "gabapentin",
+   "gabapentin",
+   "gabapentin"
+  ],
+  "brands_fa": [
+   "نئورونتین"
+  ],
+  "class": "neuropathic",
+  "en": "Gabapentin",
+  "fa": "گاباپنتین",
+  "food": "any",
+  "note_fa": "با آنتی‌اسید ۲ ساعت فاصله",
+  "timing": [
+   "morning",
+   "noon",
+   "night"
+  ]
+ },
+ "glibenclamide": {
+  "aliases": [
+   "glibenclamide",
+   "glibenclamide",
+   "glibenclamide"
+  ],
+  "brands_fa": [
+   "دائونیل"
+  ],
+  "class": "antidiabetic",
+  "en": "Glibenclamide",
+  "fa": "گلی‌بنکلامید",
+  "food": "before",
+  "note_fa": "۳۰ دقیقه قبل صبحانه؛ خطر افت قند",
+  "timing": [
+   "morning"
+  ]
+ },
+ "gliclazide": {
+  "aliases": [
+   "gliclazide",
+   "gliclazide",
+   "gliclazide"
+  ],
+  "brands_fa": [
+   "دیامیکرون"
+  ],
+  "class": "antidiabetic",
+  "en": "Gliclazide",
+  "fa": "گلی‌کلازید",
+  "food": "before",
+  "note_fa": "همراه صبحانه؛ وعده را حذف نکنید",
+  "timing": [
+   "morning"
+  ]
+ },
+ "hydrochlorothiazide": {
+  "aliases": [
+   "hydrochlorothiazide",
+   "hydrochlorothiazide",
+   "hydrochlorothiazide"
+  ],
+  "brands_fa": [
+   "اچ‌سی‌تی‌زد"
+  ],
+  "class": "diuretic",
+  "en": "Hydrochlorothiazide",
+  "fa": "هیدروکلروتیازید",
+  "food": "any",
+  "note_fa": "صبح؛ آب کافی",
+  "timing": [
+   "morning"
+  ]
+ },
+ "hydroxychloroquine": {
+  "aliases": [
+   "hydroxychloroquine",
+   "hydroxychloroquine",
+   "hydroxychloroquine"
+  ],
+  "brands_fa": [
+   "پلاکونیل"
+  ],
+  "class": "dmard",
+  "en": "Hydroxychloroquine",
+  "fa": "هیدروکسی‌کلروکین",
+  "food": "with",
+  "note_fa": "همراه غذا؛ معاینه چشم سالانه",
+  "timing": [
+   "morning"
+  ]
+ },
+ "hydroxyzine": {
+  "aliases": [
+   "hydroxyzine",
+   "hydroxyzine",
+   "hydroxyzine"
+  ],
+  "brands_fa": [
+   "آتاراکس"
+  ],
+  "class": "antihistamine",
+  "en": "Hydroxyzine",
+  "fa": "هیدروکسی‌زین",
+  "food": "any",
+  "note_fa": "خواب‌آور",
+  "timing": [
+   "bedtime"
+  ]
+ },
+ "hyoscine": {
+  "aliases": [
+   "hyoscine",
+   "hyoscine butylbromide",
+   "scopolamine",
+   "بوسکوپان",
+   "هیوسین ان بوتیل بروماید"
+  ],
+  "brands_fa": [
+   "بوسکوپان"
+  ],
+  "class": "antispasmodic",
+  "en": "Hyoscine",
+  "fa": "هیوسین",
+  "food": "any",
+  "note_fa": "برای دل‌پیچه",
+  "timing": [
+   "any"
+  ]
+ },
+ "ibuprofen": {
+  "aliases": [
+   "ibuprofen",
+   "ibuprofen",
+   "ibuprofen"
+  ],
+  "brands_fa": [
+   "بروفن"
+  ],
+  "class": "nsaid",
+  "en": "Ibuprofen",
+  "fa": "ایبوپروفن",
+  "food": "after",
+  "note_fa": "بعد غذا با آب زیاد",
+  "timing": [
+   "morning",
+   "noon",
+   "night"
+  ]
+ },
+ "imipramine": {
+  "aliases": [
+   "imipramine",
+   "imipramine",
+   "imipramine"
+  ],
+  "brands_fa": [
+   "توفرانیل"
+  ],
+  "class": "tca",
+  "en": "Imipramine",
+  "fa": "ایمی‌پرامین",
+  "food": "after",
+  "note_fa": "شب",
+  "timing": [
+   "bedtime"
+  ]
+ },
+ "indomethacin": {
+  "aliases": [
+   "indomethacin",
+   "indomethacin",
+   "indomethacin"
+  ],
+  "brands_fa": [
+   "ایندوسید"
+  ],
+  "class": "nsaid",
+  "en": "Indomethacin",
+  "fa": "ایندومتاسین",
+  "food": "after",
+  "note_fa": "بعد غذا",
+  "timing": [
+   "morning",
+   "night"
+  ]
+ },
+ "isoniazid": {
+  "aliases": [
+   "inh",
+   "isoniazid",
+   "ایزونیازید"
+  ],
+  "brands_fa": [
+   "آی‌ان‌اچ"
+  ],
+  "class": "anti-tb",
+  "en": "Isoniazid",
+  "fa": "ایزونیازید",
+  "food": "empty",
+  "note_fa": "ناشتا؛ همراه ویتامین B6",
+  "timing": [
+   "morning"
+  ]
+ },
+ "itraconazole": {
+  "aliases": [
+   "itraconazole",
+   "itraconazole",
+   "itraconazole"
+  ],
+  "brands_fa": [
+   "اسپورانوکس"
+  ],
+  "class": "antifungal",
+  "en": "Itraconazole",
+  "fa": "ایتراکونازول",
+  "food": "with",
+  "note_fa": "همراه غذای چرب یا نوشیدنی اسیدی",
+  "timing": [
+   "morning"
+  ]
+ },
+ "lactulose": {
+  "aliases": [
+   "lactulose",
+   "lactulose",
+   "lactulose"
+  ],
+  "brands_fa": [
+   "لاکتولوز"
+  ],
+  "class": "laxative",
+  "en": "Lactulose",
+  "fa": "لاکتولوز",
+  "food": "any",
+  "note_fa": "با آب زیاد",
+  "timing": [
+   "night"
+  ]
+ },
+ "lamotrigine": {
+  "aliases": [
+   "lamotrigine",
+   "lamotrigine",
+   "lamotrigine"
+  ],
+  "brands_fa": [
+   "لامیکتال"
+  ],
+  "class": "anticonvulsant",
+  "en": "Lamotrigine",
+  "fa": "لاموتریژین",
+  "food": "any",
+  "note_fa": "هر بثورات پوستی را فوری گزارش کنید",
+  "timing": [
+   "morning",
+   "night"
+  ]
+ },
+ "levetiracetam": {
+  "aliases": [
+   "levetiracetam",
+   "levetiracetam",
+   "levetiracetam"
+  ],
+  "brands_fa": [
+   "کپرا"
+  ],
+  "class": "anticonvulsant",
+  "en": "Levetiracetam",
+  "fa": "لووتیراستام",
+  "food": "any",
+  "note_fa": "با یا بدون غذا",
+  "timing": [
+   "morning",
+   "night"
+  ]
+ },
+ "levodopa-carbidopa": {
+  "aliases": [
+   "carbidopa",
+   "levodopa",
+   "levodopa carbidopa",
+   "levodopa-carbidopa",
+   "levodopacarbidopa",
+   "سینمت",
+   "لوودوپا",
+   "مادوپار"
+  ],
+  "brands_fa": [
+   "مادوپار",
+   "سینمت"
+  ],
+  "class": "antiparkinson",
+  "en": "Levodopa Carbidopa",
+  "fa": "لوودوپا-کاربی‌دوپا",
+  "food": "empty",
+  "note_fa": "۳۰ دقیقه قبل غذا؛ از غذای پرپروتئین همزمان پرهیز",
+  "timing": [
+   "morning",
+   "noon",
+   "night"
+  ]
+ },
+ "levofloxacin": {
+  "aliases": [
+   "levofloxacin",
+   "levofloxacin",
+   "levofloxacin"
+  ],
+  "brands_fa": [
+   "لواکین"
+  ],
+  "class": "antibiotic",
+  "en": "Levofloxacin",
+  "fa": "لووفلوکساسین",
+  "food": "any",
+  "note_fa": "با آنتی‌اسید ۲ ساعت فاصله",
+  "timing": [
+   "morning"
+  ]
+ },
+ "levonorgestrel-ethinylestradiol": {
+  "aliases": [
+   "levonorgestrel ethinylestradiol",
+   "levonorgestrel-ethinylestradiol",
+   "levonorgestrelethinylestradiol",
+   "oc",
+   "ocp",
+   "ال دی",
+   "اچ دی",
+   "ضد بارداری",
+   "قرص ال دی"
+  ],
+  "brands_fa": [
+   "ال‌دی",
+   "اچ‌دی"
+  ],
+  "class": "contraceptive",
+  "en": "Levonorgestrel Ethinylestradiol",
+  "fa": "قرص ضدبارداری",
+  "food": "any",
+  "note_fa": "هر شب سر ساعت ثابت",
+  "timing": [
+   "night"
+  ]
+ },
+ "levothyroxine": {
+  "aliases": [
+   "levothyroxine",
+   "t4",
+   "thyroxine",
+   "لوتیروکسین",
+   "لووتیروکسین سدیم",
+   "لیوتیروکسین"
+  ],
+  "brands_fa": [
+   "ال‌تیروکسین",
+   "یوتیروکس"
+  ],
+  "class": "thyroid",
+  "en": "Levothyroxine",
+  "fa": "لووتیروکسین",
+  "food": "empty",
+  "note_fa": "ناشتا با آب؛ ۳۰ تا ۶۰ دقیقه قبل صبحانه",
+  "timing": [
+   "morning"
+  ]
+ },
+ "lisinopril": {
+  "aliases": [
+   "lisinopril",
+   "lisinopril",
+   "lisinopril"
+  ],
+  "brands_fa": [
+   "زستریل"
+  ],
+  "class": "acei",
+  "en": "Lisinopril",
+  "fa": "لیزینوپریل",
+  "food": "any",
+  "note_fa": "سر یک ساعت ثابت",
+  "timing": [
+   "morning"
+  ]
+ },
+ "lithium": {
+  "aliases": [
+   "lithium",
+   "lithium",
+   "lithium"
+  ],
+  "brands_fa": [
+   "لیتیوم کاربنات"
+  ],
+  "class": "mood-stabilizer",
+  "en": "Lithium",
+  "fa": "لیتیوم",
+  "food": "after",
+  "note_fa": "بعد غذا؛ آب و نمک یکنواخت؛ آزمایش سطح خونی",
+  "timing": [
+   "morning",
+   "night"
+  ]
+ },
+ "loperamide": {
+  "aliases": [
+   "loperamide",
+   "loperamide",
+   "loperamide"
+  ],
+  "brands_fa": [
+   "ایمودیوم"
+  ],
+  "class": "antidiarrheal",
+  "en": "Loperamide",
+  "fa": "لوپرامید",
+  "food": "any",
+  "note_fa": "در اسهال؛ در تب و خون در مدفوع نخورید",
+  "timing": [
+   "any"
+  ]
+ },
+ "loratadine": {
+  "aliases": [
+   "loratadine",
+   "loratadine",
+   "loratadine"
+  ],
+  "brands_fa": [
+   "کلاریتین"
+  ],
+  "class": "antihistamine",
+  "en": "Loratadine",
+  "fa": "لوراتادین",
+  "food": "any",
+  "note_fa": "کم‌خواب‌آور",
+  "timing": [
+   "morning"
+  ]
+ },
+ "lorazepam": {
+  "aliases": [
+   "lorazepam",
+   "lorazepam",
+   "lorazepam"
+  ],
+  "brands_fa": [
+   "آتیوان"
+  ],
+  "class": "benzodiazepine",
+  "en": "Lorazepam",
+  "fa": "لورازپام",
+  "food": "any",
+  "note_fa": "کوتاه‌مدت",
+  "timing": [
+   "bedtime"
+  ]
+ },
+ "losartan": {
+  "aliases": [
+   "losartan",
+   "losartan",
+   "losartan"
+  ],
+  "brands_fa": [
+   "کوزار"
+  ],
+  "class": "arb",
+  "en": "Losartan",
+  "fa": "لوزارتان",
+  "food": "any",
+  "note_fa": "فشار را کنترل کنید",
+  "timing": [
+   "morning"
+  ]
+ },
+ "magnesium": {
+  "aliases": [
+   "magnesium",
+   "magnesium",
+   "magnesium"
+  ],
+  "brands_fa": [
+   "منیزیم"
+  ],
+  "class": "supplement",
+  "en": "Magnesium",
+  "fa": "منیزیم",
+  "food": "after",
+  "note_fa": "شب؛ با آنتی‌بیوتیک ۲ ساعت فاصله",
+  "timing": [
+   "night"
+  ]
+ },
+ "mebeverine": {
+  "aliases": [
+   "mebeverine",
+   "mebeverine",
+   "mebeverine"
+  ],
+  "brands_fa": [
+   "دوسپاتالین"
+  ],
+  "class": "antispasmodic",
+  "en": "Mebeverine",
+  "fa": "مبورین",
+  "food": "before",
+  "note_fa": "۲۰ دقیقه قبل غذا؛ مناسب سندرم روده تحریک‌پذیر",
+  "timing": [
+   "morning",
+   "night"
+  ]
+ },
+ "mefenamic-acid": {
+  "aliases": [
+   "mefenamic-acid",
+   "mefenamic acid",
+   "mefenamicacid"
+  ],
+  "brands_fa": [
+   "مفنامیک"
+  ],
+  "class": "nsaid",
+  "en": "Mefenamic Acid",
+  "fa": "مفنامیک اسید",
+  "food": "after",
+  "note_fa": "بعد غذا",
+  "timing": [
+   "morning",
+   "noon",
+   "night"
+  ]
+ },
+ "melatonin": {
+  "aliases": [
+   "melatonin",
+   "melatonin",
+   "melatonin"
+  ],
+  "brands_fa": [
+   "ملاتونین"
+  ],
+  "class": "supplement",
+  "en": "Melatonin",
+  "fa": "ملاتونین",
+  "food": "any",
+  "note_fa": "۳۰ تا ۶۰ دقیقه قبل خواب در تاریکی",
+  "timing": [
+   "bedtime"
+  ]
+ },
+ "mesalazine": {
+  "aliases": [
+   "mesalazine",
+   "mesalazine",
+   "mesalazine"
+  ],
+  "brands_fa": [
+   "آساکول"
+  ],
+  "class": "gastro-antiinflammatory",
+  "en": "Mesalazine",
+  "fa": "مسالازین",
+  "food": "after",
+  "note_fa": "بعد غذا؛ قرص را نجویید",
+  "timing": [
+   "morning",
+   "noon",
+   "night"
+  ]
+ },
+ "metformin": {
+  "aliases": [
+   "metformin",
+   "متفورمين",
+   "متفورمین ای آر",
+   "گلوکوفاژ"
+  ],
+  "brands_fa": [
+   "گلوکوفاژ",
+   "متفورال"
+  ],
+  "class": "antidiabetic",
+  "en": "Metformin",
+  "fa": "متفورمین",
+  "food": "after",
+  "note_fa": "بعد از غذا برای کاهش دل‌درد",
+  "timing": [
+   "morning",
+   "night"
+  ]
+ },
+ "methimazole": {
+  "aliases": [
+   "methimazole",
+   "methimazole",
+   "methimazole"
+  ],
+  "brands_fa": [
+   "تاپازول"
+  ],
+  "class": "thyroid",
+  "en": "Methimazole",
+  "fa": "متی‌مازول",
+  "food": "with",
+  "note_fa": "همراه غذا سر ساعت ثابت",
+  "timing": [
+   "morning"
+  ]
+ },
+ "methocarbamol": {
+  "aliases": [
+   "methocarbamol",
+   "methocarbamol",
+   "methocarbamol"
+  ],
+  "brands_fa": [
+   "روباکسین"
+  ],
+  "class": "muscle-relaxant",
+  "en": "Methocarbamol",
+  "fa": "متوکاربامول",
+  "food": "after",
+  "note_fa": "خواب‌آلودگی",
+  "timing": [
+   "morning",
+   "night"
+  ]
+ },
+ "methotrexate": {
+  "aliases": [
+   "methotrexate",
+   "methotrexate",
+   "methotrexate"
+  ],
+  "brands_fa": [
+   "متوترکسات"
+  ],
+  "class": "dmard",
+  "en": "Methotrexate",
+  "fa": "متوترکسات",
+  "food": "after",
+  "note_fa": "هفته‌ای یک بار؛ همراه فولیک اسید در روز دیگر",
+  "timing": [
+   "any"
+  ]
+ },
+ "methylphenidate": {
+  "aliases": [
+   "concerta",
+   "methylphenidate",
+   "ritalin",
+   "ریتالین",
+   "کنسرتا"
+  ],
+  "brands_fa": [
+   "ریتالین"
+  ],
+  "class": "stimulant",
+  "en": "Methylphenidate",
+  "fa": "متیل‌فنیدیت",
+  "food": "after",
+  "note_fa": "بعد صبحانه؛ بعد از عصر نخورید",
+  "timing": [
+   "morning",
+   "noon"
+  ]
+ },
+ "metoclopramide": {
+  "aliases": [
+   "metoclopramide",
+   "metoclopramide",
+   "metoclopramide"
+  ],
+  "brands_fa": [
+   "پلازیل"
+  ],
+  "class": "prokinetic",
+  "en": "Metoclopramide",
+  "fa": "متوکلوپرامید",
+  "food": "before",
+  "note_fa": "۳۰ دقیقه قبل غذا",
+  "timing": [
+   "morning",
+   "noon",
+   "night"
+  ]
+ },
+ "metoprolol": {
+  "aliases": [
+   "metoprolol",
+   "metoprolol",
+   "metoprolol"
+  ],
+  "brands_fa": [
+   "بتالوک"
+  ],
+  "class": "beta-blocker",
+  "en": "Metoprolol",
+  "fa": "متوپرولول",
+  "food": "with",
+  "note_fa": "همراه غذا؛ قطع ناگهانی نکنید",
+  "timing": [
+   "morning",
+   "night"
+  ]
+ },
+ "metronidazole": {
+  "aliases": [
+   "metronidazole",
+   "metronidazole",
+   "metronidazole"
+  ],
+  "brands_fa": [
+   "فلاژیل"
+  ],
+  "class": "antibiotic",
+  "en": "Metronidazole",
+  "fa": "مترونیدازول",
+  "food": "after",
+  "note_fa": "الکل کاملاً ممنوع",
+  "timing": [
+   "morning",
+   "noon",
+   "night"
+  ]
+ },
+ "mirtazapine": {
+  "aliases": [
+   "mirtazapine",
+   "mirtazapine",
+   "mirtazapine"
+  ],
+  "brands_fa": [
+   "رمرون"
+  ],
+  "class": "antidepressant",
+  "en": "Mirtazapine",
+  "fa": "میرتازاپین",
+  "food": "any",
+  "note_fa": "شب؛ خواب‌آور و اشتها‌آور",
+  "timing": [
+   "bedtime"
+  ]
+ },
+ "montelukast": {
+  "aliases": [
+   "montelukast",
+   "montelukast",
+   "montelukast"
+  ],
+  "brands_fa": [
+   "سینگولر"
+  ],
+  "class": "antiasthma",
+  "en": "Montelukast",
+  "fa": "مونته‌لوکاست",
+  "food": "any",
+  "note_fa": "شب",
+  "timing": [
+   "bedtime"
+  ]
+ },
+ "morphine": {
+  "aliases": [
+   "morphine",
+   "morphine",
+   "morphine"
+  ],
+  "brands_fa": [
+   "ام‌اس‌کانتین"
+  ],
+  "class": "opioid",
+  "en": "Morphine",
+  "fa": "مورفین",
+  "food": "any",
+  "note_fa": "سر ساعت ثابت؛ ملین لازم است",
+  "timing": [
+   "morning",
+   "night"
+  ]
+ },
+ "naproxen": {
+  "aliases": [
+   "naproxen",
+   "naproxen",
+   "naproxen"
+  ],
+  "brands_fa": [
+   "ناپروسین"
+  ],
+  "class": "nsaid",
+  "en": "Naproxen",
+  "fa": "ناپروکسن",
+  "food": "after",
+  "note_fa": "بعد غذا",
+  "timing": [
+   "morning",
+   "night"
+  ]
+ },
+ "nifedipine": {
+  "aliases": [
+   "nifedipine",
+   "nifedipine",
+   "nifedipine"
+  ],
+  "brands_fa": [
+   "آدالات"
+  ],
+  "class": "ccb",
+  "en": "Nifedipine",
+  "fa": "نیفدیپین",
+  "food": "after",
+  "note_fa": "قرص آهسته‌رهش را نجویید",
+  "timing": [
+   "morning"
+  ]
+ },
+ "nitrofurantoin": {
+  "aliases": [
+   "nitrofurantoin",
+   "nitrofurantoin",
+   "nitrofurantoin"
+  ],
+  "brands_fa": [
+   "ماکروبید"
+  ],
+  "class": "antibiotic",
+  "en": "Nitrofurantoin",
+  "fa": "نیتروفورانتوئین",
+  "food": "with",
+  "note_fa": "همراه غذا؛ ادرار تیره طبیعی است",
+  "timing": [
+   "morning",
+   "night"
+  ]
+ },
+ "nortriptyline": {
+  "aliases": [
+   "nortriptyline",
+   "nortriptyline",
+   "nortriptyline"
+  ],
+  "brands_fa": [
+   "نورتریپتیلین"
+  ],
+  "class": "tca",
+  "en": "Nortriptyline",
+  "fa": "نورتریپتیلین",
+  "food": "any",
+  "note_fa": "شب",
+  "timing": [
+   "bedtime"
+  ]
+ },
+ "olanzapine": {
+  "aliases": [
+   "olanzapine",
+   "olanzapine",
+   "olanzapine"
+  ],
+  "brands_fa": [
+   "زیپرکسا"
+  ],
+  "class": "antipsychotic",
+  "en": "Olanzapine",
+  "fa": "اولانزاپین",
+  "food": "any",
+  "note_fa": "افزایش وزن را پایش کنید",
+  "timing": [
+   "bedtime"
+  ]
+ },
+ "omega-3": {
+  "aliases": [
+   "fish oil",
+   "omega 3",
+   "omega-3",
+   "omega3",
+   "امگا 3",
+   "امگا تری",
+   "روغن ماهی"
+  ],
+  "brands_fa": [
+   "روغن ماهی"
+  ],
+  "class": "supplement",
+  "en": "Omega 3",
+  "fa": "امگا۳",
+  "food": "with",
+  "note_fa": "همراه غذا؛ با وارفارین احتیاط",
+  "timing": [
+   "noon",
+   "night"
+  ]
+ },
+ "omeprazole": {
+  "aliases": [
+   "omeprazole",
+   "omeprazole",
+   "omeprazole"
+  ],
+  "brands_fa": [
+   "لوزک"
+  ],
+  "class": "ppi",
+  "en": "Omeprazole",
+  "fa": "امپرازول",
+  "food": "before",
+  "note_fa": "۳۰ دقیقه قبل صبحانه ناشتا",
+  "timing": [
+   "morning"
+  ]
+ },
+ "ondansetron": {
+  "aliases": [
+   "ondansetron",
+   "ondansetron",
+   "ondansetron"
+  ],
+  "brands_fa": [
+   "زوفران"
+  ],
+  "class": "antiemetic",
+  "en": "Ondansetron",
+  "fa": "اندانسترون",
+  "food": "any",
+  "note_fa": "در صورت تهوع",
+  "timing": [
+   "any"
+  ]
+ },
+ "oseltamivir": {
+  "aliases": [
+   "oseltamivir",
+   "oseltamivir",
+   "oseltamivir"
+  ],
+  "brands_fa": [
+   "تامیفلو"
+  ],
+  "class": "antiviral",
+  "en": "Oseltamivir",
+  "fa": "اوسلتامیویر",
+  "food": "with",
+  "note_fa": "همراه غذا",
+  "timing": [
+   "morning",
+   "night"
+  ]
+ },
+ "oxybutynin": {
+  "aliases": [
+   "oxybutynin",
+   "oxybutynin",
+   "oxybutynin"
+  ],
+  "brands_fa": [
+   "دیتروپان"
+  ],
+  "class": "urology",
+  "en": "Oxybutynin",
+  "fa": "اکسی‌بوتینین",
+  "food": "any",
+  "note_fa": "خشکی دهان",
+  "timing": [
+   "morning",
+   "night"
+  ]
+ },
+ "pantoprazole": {
+  "aliases": [
+   "pantoprazole",
+   "pantoprazole",
+   "pantoprazole"
+  ],
+  "brands_fa": [
+   "پنتولوک"
+  ],
+  "class": "ppi",
+  "en": "Pantoprazole",
+  "fa": "پنتوپرازول",
+  "food": "before",
+  "note_fa": "۳۰ دقیقه قبل غذا",
+  "timing": [
+   "morning"
+  ]
+ },
+ "paroxetine": {
+  "aliases": [
+   "paroxetine",
+   "paroxetine",
+   "paroxetine"
+  ],
+  "brands_fa": [
+   "پاکسیل"
+  ],
+  "class": "ssri",
+  "en": "Paroxetine",
+  "fa": "پاروکستین",
+  "food": "after",
+  "note_fa": "شب؛ قطع ناگهانی نکنید",
+  "timing": [
+   "night"
+  ]
+ },
+ "piroxicam": {
+  "aliases": [
+   "piroxicam",
+   "piroxicam",
+   "piroxicam"
+  ],
+  "brands_fa": [
+   "فلدن"
+  ],
+  "class": "nsaid",
+  "en": "Piroxicam",
+  "fa": "پیروکسیکام",
+  "food": "after",
+  "note_fa": "بعد غذا",
+  "timing": [
+   "morning"
+  ]
+ },
+ "polyethylene-glycol": {
+  "aliases": [
+   "macrogol",
+   "peg",
+   "polyethylene glycol",
+   "polyethylene-glycol",
+   "polyethyleneglycol",
+   "موویکول",
+   "پلی اتیلن گلیکول"
+  ],
+  "brands_fa": [
+   "موویکول"
+  ],
+  "class": "laxative",
+  "en": "Polyethylene Glycol",
+  "fa": "پلی‌اتیلن‌گلیکول",
+  "food": "any",
+  "note_fa": "در آب حل کنید",
+  "timing": [
+   "morning"
+  ]
+ },
+ "potassium-chloride": {
+  "aliases": [
+   "potassium-chloride",
+   "potassium chloride",
+   "potassiumchloride"
+  ],
+  "brands_fa": [
+   "کلیمورون"
+  ],
+  "class": "supplement",
+  "en": "Potassium Chloride",
+  "fa": "کلرید پتاسیم",
+  "food": "after",
+  "note_fa": "بعد غذا با آب زیاد",
+  "timing": [
+   "morning",
+   "night"
+  ]
+ },
+ "prednisolone": {
+  "aliases": [
+   "prednisolone",
+   "prednisolone",
+   "prednisolone"
+  ],
+  "brands_fa": [
+   "پردنیزولون"
+  ],
+  "class": "corticosteroid",
+  "en": "Prednisolone",
+  "fa": "پردنیزولون",
+  "food": "after",
+  "note_fa": "بعد صبحانه یکجا؛ قطع ناگهانی خطرناک",
+  "timing": [
+   "morning"
+  ]
+ },
+ "pregabalin": {
+  "aliases": [
+   "pregabalin",
+   "pregabalin",
+   "pregabalin"
+  ],
+  "brands_fa": [
+   "لیریکا"
+  ],
+  "class": "neuropathic",
+  "en": "Pregabalin",
+  "fa": "پرگابالین",
+  "food": "any",
+  "note_fa": "سرگیجه ابتدای درمان",
+  "timing": [
+   "morning",
+   "night"
+  ]
+ },
+ "probiotic": {
+  "aliases": [
+   "probiotic",
+   "probiotic",
+   "probiotic"
+  ],
+  "brands_fa": [
+   "لاکتوکر",
+   "پروبیوتیک"
+  ],
+  "class": "supplement",
+  "en": "Probiotic",
+  "fa": "پروبیوتیک",
+  "food": "with",
+  "note_fa": "با آنتی‌بیوتیک ۲ ساعت فاصله",
+  "timing": [
+   "night"
+  ]
+ },
+ "propranolol": {
+  "aliases": [
+   "propranolol",
+   "propranolol",
+   "propranolol"
+  ],
+  "brands_fa": [
+   "ایندرال"
+  ],
+  "class": "beta-blocker",
+  "en": "Propranolol",
+  "fa": "پروپرانولول",
+  "food": "before",
+  "note_fa": "قبل غذا سر ساعت ثابت",
+  "timing": [
+   "morning",
+   "night"
+  ]
+ },
+ "quetiapine": {
+  "aliases": [
+   "quetiapine",
+   "quetiapine",
+   "quetiapine"
+  ],
+  "brands_fa": [
+   "سروکوئل"
+  ],
+  "class": "antipsychotic",
+  "en": "Quetiapine",
+  "fa": "کوئتیاپین",
+  "food": "any",
+  "note_fa": "شب؛ خواب‌آور",
+  "timing": [
+   "bedtime"
+  ]
+ },
+ "ranitidine": {
+  "aliases": [
+   "ranitidine",
+   "ranitidine",
+   "ranitidine"
+  ],
+  "brands_fa": [
+   "زانتاک"
+  ],
+  "class": "h2-blocker",
+  "en": "Ranitidine",
+  "fa": "رانیتیدین",
+  "food": "any",
+  "note_fa": "شب قبل خواب",
+  "timing": [
+   "night"
+  ]
+ },
+ "rifampin": {
+  "aliases": [
+   "rifampin",
+   "rifampin",
+   "rifampin"
+  ],
+  "brands_fa": [
+   "ریفادین"
+  ],
+  "class": "anti-tb",
+  "en": "Rifampin",
+  "fa": "ریفامپین",
+  "food": "empty",
+  "note_fa": "ناشتا؛ ادرار نارنجی طبیعی است",
+  "timing": [
+   "morning"
+  ]
+ },
+ "risperidone": {
+  "aliases": [
+   "risperidone",
+   "risperidone",
+   "risperidone"
+  ],
+  "brands_fa": [
+   "ریسپردال"
+  ],
+  "class": "antipsychotic",
+  "en": "Risperidone",
+  "fa": "ریسپریدون",
+  "food": "any",
+  "note_fa": "سر ساعت ثابت",
+  "timing": [
+   "night"
+  ]
+ },
+ "rivaroxaban": {
+  "aliases": [
+   "rivaroxaban",
+   "rivaroxaban",
+   "rivaroxaban"
+  ],
+  "brands_fa": [
+   "زارلتو"
+  ],
+  "class": "anticoagulant",
+  "en": "Rivaroxaban",
+  "fa": "ریواروکسابان",
+  "food": "with",
+  "note_fa": "دوزهای ۱۵ و ۲۰ باید همراه غذای کامل خورده شود",
+  "timing": [
+   "evening"
+  ]
+ },
+ "rosuvastatin": {
+  "aliases": [
+   "rosuvastatin",
+   "rosuvastatin",
+   "rosuvastatin"
+  ],
+  "brands_fa": [
+   "کرستور"
+  ],
+  "class": "statin",
+  "en": "Rosuvastatin",
+  "fa": "روزوواستاتین",
+  "food": "any",
+  "note_fa": "با آنتی‌اسید ۲ ساعت فاصله",
+  "timing": [
+   "night"
+  ]
+ },
+ "salbutamol": {
+  "aliases": [
+   "albuterol",
+   "salbutamol",
+   "ventolin",
+   "سالبوتامول اسپری",
+   "ونتولین"
+  ],
+  "brands_fa": [
+   "ونتولین"
+  ],
+  "class": "inhaler",
+  "en": "Salbutamol",
+  "fa": "سالبوتامول",
+  "food": "any",
+  "note_fa": "اسپری نجات؛ بعد مصرف دهان را بشویید",
+  "timing": [
+   "any"
+  ]
+ },
+ "sertraline": {
+  "aliases": [
+   "sertraline",
+   "sertraline",
+   "sertraline"
+  ],
+  "brands_fa": [
+   "زولوفت"
+  ],
+  "class": "ssri",
+  "en": "Sertraline",
+  "fa": "سرترالین",
+  "food": "after",
+  "note_fa": "صبح؛ بعد غذا",
+  "timing": [
+   "morning"
+  ]
+ },
+ "sildenafil": {
+  "aliases": [
+   "sildenafil",
+   "sildenafil",
+   "sildenafil"
+  ],
+  "brands_fa": [
+   "ویاگرا"
+  ],
+  "class": "pde5",
+  "en": "Sildenafil",
+  "fa": "سیلدنافیل",
+  "food": "empty",
+  "note_fa": "با نیترات‌ها هرگز؛ با غذای چرب دیرتر اثر می‌کند",
+  "timing": [
+   "any"
+  ]
+ },
+ "simvastatin": {
+  "aliases": [
+   "simvastatin",
+   "simvastatin",
+   "simvastatin"
+  ],
+  "brands_fa": [
+   "زوکور"
+  ],
+  "class": "statin",
+  "en": "Simvastatin",
+  "fa": "سیمواستاتین",
+  "food": "any",
+  "note_fa": "شب؛ گریپ‌فروت ممنوع",
+  "timing": [
+   "night"
+  ]
+ },
+ "sitagliptin": {
+  "aliases": [
+   "sitagliptin",
+   "sitagliptin",
+   "sitagliptin"
+  ],
+  "brands_fa": [
+   "جانوویا"
+  ],
+  "class": "antidiabetic",
+  "en": "Sitagliptin",
+  "fa": "سیتاگلیپتین",
+  "food": "any",
+  "note_fa": "با یا بدون غذا",
+  "timing": [
+   "morning"
+  ]
+ },
+ "sodium-valproate": {
+  "aliases": [
+   "sodium valproate",
+   "sodium-valproate",
+   "sodiumvalproate",
+   "valproate",
+   "valproic acid",
+   "دپاکین کرونو",
+   "والپروئیک اسید",
+   "والپروات سدیم"
+  ],
+  "brands_fa": [
+   "دپاکین"
+  ],
+  "class": "anticonvulsant",
+  "en": "Sodium Valproate",
+  "fa": "سدیم والپروات",
+  "food": "after",
+  "note_fa": "بعد غذا",
+  "timing": [
+   "morning",
+   "night"
+  ]
+ },
+ "spironolactone": {
+  "aliases": [
+   "spironolactone",
+   "spironolactone",
+   "spironolactone"
+  ],
+  "brands_fa": [
+   "آلداکتون"
+  ],
+  "class": "diuretic",
+  "en": "Spironolactone",
+  "fa": "اسپیرونولاکتون",
+  "food": "after",
+  "note_fa": "بعد غذا؛ پتاسیم را کنترل کنید",
+  "timing": [
+   "morning"
+  ]
+ },
+ "sucralfate": {
+  "aliases": [
+   "sucralfate",
+   "اولسانیک",
+   "سوکرالفيت"
+  ],
+  "brands_fa": [
+   "اولسانیک"
+  ],
+  "class": "gastro",
+  "en": "Sucralfate",
+  "fa": "سوکرالفات",
+  "food": "empty",
+  "note_fa": "یک ساعت قبل غذا؛ با بقیه داروها ۲ ساعت فاصله",
+  "timing": [
+   "morning",
+   "noon",
+   "night"
+  ]
+ },
+ "sumatriptan": {
+  "aliases": [
+   "sumatriptan",
+   "sumatriptan",
+   "sumatriptan"
+  ],
+  "brands_fa": [
+   "ایمیگران"
+  ],
+  "class": "antimigraine",
+  "en": "Sumatriptan",
+  "fa": "سوماتریپتان",
+  "food": "any",
+  "note_fa": "در شروع حمله سردرد",
+  "timing": [
+   "any"
+  ]
+ },
+ "tamsulosin": {
+  "aliases": [
+   "tamsulosin",
+   "tamsulosin",
+   "tamsulosin"
+  ],
+  "brands_fa": [
+   "اومنیک"
+  ],
+  "class": "bph",
+  "en": "Tamsulosin",
+  "fa": "تامسولوسین",
+  "food": "after",
+  "note_fa": "۳۰ دقیقه بعد شام؛ سرگیجه هنگام بلند شدن",
+  "timing": [
+   "night"
+  ]
+ },
+ "theophylline": {
+  "aliases": [
+   "theophylline",
+   "theophylline",
+   "theophylline"
+  ],
+  "brands_fa": [
+   "تئوفیلین"
+  ],
+  "class": "antiasthma",
+  "en": "Theophylline",
+  "fa": "تئوفیلین",
+  "food": "empty",
+  "note_fa": "کافئین را کم کنید",
+  "timing": [
+   "morning",
+   "night"
+  ]
+ },
+ "tramadol": {
+  "aliases": [
+   "tramadol",
+   "tramadol",
+   "tramadol"
+  ],
+  "brands_fa": [
+   "ترامادول"
+  ],
+  "class": "opioid",
+  "en": "Tramadol",
+  "fa": "ترامادول",
+  "food": "after",
+  "note_fa": "خواب‌آلودگی؛ با الکل و بنزودیازپین خطرناک",
+  "timing": [
+   "morning",
+   "night"
+  ]
+ },
+ "trazodone": {
+  "aliases": [
+   "trazodone",
+   "ترازودون هیدروکلراید"
+  ],
+  "brands_fa": [
+   "ترازودون"
+  ],
+  "class": "antidepressant",
+  "en": "Trazodone",
+  "fa": "ترازودون",
+  "food": "after",
+  "note_fa": "بعد غذا قبل خواب",
+  "timing": [
+   "bedtime"
+  ]
+ },
+ "trimethoprim-sulfamethoxazole": {
+  "aliases": [
+   "co-trimoxazole",
+   "cotrimoxazole",
+   "trimethoprim sulfamethoxazole",
+   "trimethoprim-sulfamethoxazole",
+   "trimethoprimsulfamethoxazole",
+   "بکتریم",
+   "سولفامتوکسازول",
+   "کوتریموکسازول"
+  ],
+  "brands_fa": [
+   "باکتریم"
+  ],
+  "class": "antibiotic",
+  "en": "Trimethoprim Sulfamethoxazole",
+  "fa": "کوتریموکسازول",
+  "food": "after",
+  "note_fa": "آب زیاد بنوشید",
+  "timing": [
+   "morning",
+   "night"
+  ]
+ },
+ "valsartan": {
+  "aliases": [
+   "valsartan",
+   "valsartan",
+   "valsartan"
+  ],
+  "brands_fa": [
+   "دیووان"
+  ],
+  "class": "arb",
+  "en": "Valsartan",
+  "fa": "والسارتان",
+  "food": "any",
+  "note_fa": "با یا بدون غذا",
+  "timing": [
+   "morning"
+  ]
+ },
+ "venlafaxine": {
+  "aliases": [
+   "venlafaxine",
+   "venlafaxine",
+   "venlafaxine"
+  ],
+  "brands_fa": [
+   "افکسور"
+  ],
+  "class": "snri",
+  "en": "Venlafaxine",
+  "fa": "ونلافاکسین",
+  "food": "with",
+  "note_fa": "همراه غذا صبح",
+  "timing": [
+   "morning"
+  ]
+ },
+ "vitamin-b-complex": {
+  "aliases": [
+   "b complex",
+   "vitamin b",
+   "vitamin b complex",
+   "vitamin-b-complex",
+   "vitaminbcomplex",
+   "ب کمپلکس",
+   "ویتامین ب"
+  ],
+  "brands_fa": [
+   "ب‌کمپلکس"
+  ],
+  "class": "supplement",
+  "en": "Vitamin B Complex",
+  "fa": "ویتامین ب کمپلکس",
+  "food": "after",
+  "note_fa": "بعد صبحانه",
+  "timing": [
+   "morning"
+  ]
+ },
+ "vitamin-d": {
+  "aliases": [
+   "cholecalciferol",
+   "vit d",
+   "vitamin d",
+   "vitamin-d",
+   "vitamind",
+   "ویت دی",
+   "ویتامین د",
+   "پرل ویتامین دی"
+  ],
+  "brands_fa": [
+   "ویتامین دی۳"
+  ],
+  "class": "supplement",
+  "en": "Vitamin D",
+  "fa": "ویتامین دی",
+  "food": "with",
+  "note_fa": "همراه غذای چرب",
+  "timing": [
+   "any"
+  ]
+ },
+ "warfarin": {
+  "aliases": [
+   "coumadin",
+   "warfarin",
+   "وارفارين",
+   "کوماتان"
+  ],
+  "brands_fa": [
+   "کوماتان",
+   "کومادین"
+  ],
+  "class": "anticoagulant",
+  "en": "Warfarin",
+  "fa": "وارفارین",
+  "food": "any",
+  "note_fa": "هر روز سر یک ساعت ثابت؛ مصرف سبزیجات برگ‌سبز را یکنواخت نگه دارید",
+  "timing": [
+   "evening"
+  ]
+ },
+ "zinc": {
+  "aliases": [
+   "zinc",
+   "zinc",
+   "zinc"
+  ],
+  "brands_fa": [
+   "قرص روی"
+  ],
+  "class": "supplement",
+  "en": "Zinc",
+  "fa": "زینک",
+  "food": "after",
+  "note_fa": "با آهن و کلسیم همزمان نخورید",
+  "timing": [
+   "night"
+  ]
+ },
+ "zolpidem": {
+  "aliases": [
+   "zolpidem",
+   "zolpidem",
+   "zolpidem"
+  ],
+  "brands_fa": [
+   "استیلنوکس"
+  ],
+  "class": "hypnotic",
+  "en": "Zolpidem",
+  "fa": "زولپیدم",
+  "food": "empty",
+  "note_fa": "درست قبل خواب با معده خالی",
+  "timing": [
+   "bedtime"
+  ]
+ }
+}
