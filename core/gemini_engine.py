@@ -1,4 +1,10 @@
-"""موتور تحلیل دارویی با Gemini — تولید JSON ساختاریافته."""
+"""موتور تحلیل دارویی با LLM — تولید JSON ساختاریافته.
+
+دو ارائه‌دهنده (مثل Wokeness-Rate، انتخاب با کاربر):
+- gemini: مدل‌های Gemini با google-genai
+- openrouter: هر مدل OpenAI-compatible از طریق OpenRouter (پیش‌فرض: openai/gpt-4o-mini)
+کلید هر کاربر فقط در موتور خودش نگه داشته می‌شود و با بقیه قاطی نمی‌شود.
+"""
 
 from __future__ import annotations
 
@@ -18,6 +24,10 @@ MODEL_CHAIN = [
     "gemini-2.5-flash",
     "gemini-2.5-flash-lite",
 ]
+
+PROVIDERS = ("gemini", "openrouter")
+DEFAULT_MODELS = {"gemini": "", "openrouter": "openai/gpt-4o-mini"}  # gemini خالی = انتخاب خودکار از MODEL_CHAIN
+PROVIDER_FA = {"gemini": "Gemini (گوگل)", "openrouter": "OpenRouter"}
 
 # پرامپت‌های سیستم — خروجی فقط JSON، بدون markdown
 SYS_IDENTIFY = """شما یک داروساز متخصص هستید. وظیفه: استخراج داروها از متن آزاد کاربر.
@@ -121,15 +131,37 @@ SYS_MISSED = """شما یک داروساز هستید. برای لیست دار�
 - specific: برای وارفارین، قرص ضدبارداری، آنتی‌بیوتیک، لووتیروکسین، آنتی‌تشنج، داروهای قند، آلندرونات هفتگی، متوترکسات، کورتون، بنزودیازپین/خواب‌آورها.
 """
 
+def parse_json_fallback(text: str) -> dict:
+    """متن پاسخ مدل → dict با چند استراتژی؛ در بدترین حالت {}."""
+    text = (text or "").strip()
+    if not text:
+        return {}
+    for strategy in [
+        lambda t: json.loads(t),
+        lambda t: json.loads(re.search(r"\{.*\}", t, re.DOTALL).group(0)) if re.search(r"\{.*\}", t, re.DOTALL) else None,
+        lambda t: json.loads(t[t.index("{"):t.rindex("}") + 1]) if "{" in t and "}" in t else None,
+    ]:
+        try:
+            result = strategy(text)
+            if isinstance(result, dict):
+                return result
+        except Exception:
+            continue
+    return {}
+
+
 class GeminiEngine:
-    def __init__(self, api_key: str | None = None):
+    def __init__(self, api_key: str | None = None, model: str | None = None):
         self.api_key = api_key or os.environ.get("GEMINI_API_KEY")
         if not self.api_key:
             raise ValueError("GEMINI_API_KEY not set")
+        self.forced_model = (model or "").strip() or None
         self.client = genai.Client(api_key=self.api_key)
         self._model_name = None
 
     def _pick_model(self) -> str:
+        if self.forced_model:
+            return self.forced_model
         if self._model_name:
             return self._model_name
         for m in MODEL_CHAIN:
@@ -212,3 +244,84 @@ class GeminiEngine:
 @lru_cache(maxsize=1)
 def get_engine() -> GeminiEngine:
     return GeminiEngine()
+
+
+class OpenRouterEngine:
+    """موتور OpenAI-compatible از طریق OpenRouter — همان ۴ متد GeminiEngine."""
+
+    URL = "https://openrouter.ai/api/v1/chat/completions"
+
+    def __init__(self, api_key: str | None = None, model: str | None = None):
+        self.api_key = api_key or os.environ.get("OPENROUTER_API_KEY")
+        if not self.api_key:
+            raise ValueError("OPENROUTER_API_KEY not set")
+        self.model = (model or "").strip() or DEFAULT_MODELS["openrouter"]
+
+    def _chat_json(self, system: str, user: str, max_tokens: int = 4096) -> dict:
+        import requests
+
+        r = requests.post(
+            self.URL,
+            headers={
+                "Content-Type": "application/json",
+                "Authorization": f"Bearer {self.api_key}",
+                "HTTP-Referer": "https://github.com/balatapar/Med-Assist",
+                "X-Title": "daroyar",
+            },
+            json={
+                "model": self.model,
+                "temperature": 0.0,
+                "max_tokens": max_tokens,
+                "response_format": {"type": "json_object"},
+                "messages": [
+                    {"role": "system", "content": system},
+                    {"role": "user", "content": user},
+                ],
+            },
+            timeout=90,
+        )
+        if r.status_code != 200:
+            raise RuntimeError(f"OpenRouter error {r.status_code}: {r.text[:200]}")
+        content = (r.json()["choices"][0]["message"]["content"] or "")
+        return parse_json_fallback(content)
+
+    def identify_drugs(self, text: str) -> list[dict]:
+        if not text.strip():
+            return []
+        return self._chat_json(SYS_IDENTIFY, text).get("drugs", [])
+
+    def analyze_interactions(self, drugs: list[dict]) -> dict:
+        if not drugs:
+            return {"pairs": [], "food_warnings": [], "duplicate_class_warnings": [], "red_flags_fa": []}
+        generic_list = [d.get("generic_en") or d.get("generic_fa") for d in drugs if d.get("generic_en") or d.get("generic_fa")]
+        return self._chat_json(SYS_INTERACTIONS, "لیست داروها (ژنریک): " + ", ".join(generic_list))
+
+    def build_schedule(self, drugs: list[dict], doctor_order: str = "", clock: dict | None = None) -> dict:
+        if not drugs:
+            return {"rows": [], "conflicts_fa": [], "empty_stomach_conflicts_fa": []}
+        clock = clock or {"morning": "08:00", "noon": "13:30", "evening": "18:00", "night": "20:30", "bedtime": "22:30"}
+        user = json.dumps({"drugs": drugs, "doctor_order": doctor_order, "default_clock": clock}, ensure_ascii=False)
+        return self._chat_json(SYS_SCHEDULE, user)
+
+    def missed_dose_guide(self, drugs: list[dict]) -> dict:
+        if not drugs:
+            return {"general_fa": [], "specific_fa": []}
+        generic_list = [d.get("generic_en") or d.get("generic_fa") for d in drugs if d.get("generic_en") or d.get("generic_fa")]
+        return self._chat_json(SYS_MISSED, "داروها: " + ", ".join(generic_list))
+
+
+_ENGINES: dict = {}
+
+
+def get_llm_engine(provider: str = "gemini", model: str | None = None, api_key: str | None = None):
+    """کارخانه موتور بر اساس انتخاب کاربر؛ کش جدا برای هر (provider, model, key)."""
+    provider = (provider or "gemini").lower()
+    if provider not in PROVIDERS:
+        provider = "gemini"
+    cache_key = (provider, (model or "").strip(), api_key or "")
+    if cache_key not in _ENGINES:
+        if provider == "openrouter":
+            _ENGINES[cache_key] = OpenRouterEngine(api_key, model)
+        else:
+            _ENGINES[cache_key] = GeminiEngine(api_key, model)
+    return _ENGINES[cache_key]

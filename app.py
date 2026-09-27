@@ -51,17 +51,100 @@ DRUGS = load_drugs()
 # نشان‌دهنده منبع تحلیل
 def source_badge(src: str) -> str:
     if src == "gemini":
-        return '<span class="badge b-info">🤖 تحلیل شده با Gemini</span>'
+        return '<span class="badge b-info">🤖 تحلیل شده با هوش مصنوعی</span>'
     if src == "hybrid":
-        return '<span class="badge b-ok">🔀 Gemini + لوکال</span>'
+        return '<span class="badge b-ok">🔀 هوش مصنوعی + لوکال</span>'
     return '<span class="badge b-caution">📦 تحلیل لوکال (آفلاین)</span>'
 
 st.markdown(
     '<div class="hero"><h1>💊 دارویار</h1>'
     "<p>نام داروهایت و دستور پزشک را بنویس. تداخل‌ها، جدول مصرف، یادآور تقویم و راهنمای دوز فراموش‌شده می‌گیری."
-    "تحلیل با هوش مصنوعی Gemini؛ در صورت قطع اینترنت، فول‌بک لوکال فعال می‌شود.</p></div>",
+    "تحلیل با هوش مصنوعی (Gemini یا OpenRouter — با کلید خودت)؛ در صورت قطع اینترنت، فول‌بک لوکال فعال می‌شود.</p></div>",
     unsafe_allow_html=True,
 )
+
+# ─────────────────── تنظیمات هوش مصنوعی: ارائه‌دهنده + کلید (هر کاربر مال خودش) ───────────────────
+from core.gemini_engine import PROVIDER_FA, DEFAULT_MODELS
+
+IS_WINDOWS = sys.platform.startswith("win")
+st.session_state.setdefault("llm_provider", "gemini")
+st.session_state.setdefault("llm_model", "")
+st.session_state.setdefault("llm_key", "")
+
+_url_key = (st.query_params.get("key") or "").strip()
+if _url_key and _url_key != st.session_state["llm_key"]:
+    st.session_state["llm_key"] = _url_key
+
+_provider = st.session_state["llm_provider"]
+_model_default = DEFAULT_MODELS.get(_provider, "")
+_env_name = "OPENROUTER_API_KEY" if _provider == "openrouter" else "GEMINI_API_KEY"
+_env_key = os.environ.get(_env_name, "").strip()
+_session_key = st.session_state["llm_key"].strip()
+active_key = _url_key or _session_key or _env_key
+key_source = ("لینک" if _url_key else "این پنجره" if _session_key
+              else "پیش‌فرض سرور" if _env_key else "—")
+
+with st.expander(
+    "⚙️ تنظیمات هوش مصنوعی — ارائه‌دهنده و کلید" + (f"  •  {_provider} • کلید: {key_source}" if active_key else ""),
+    expanded=not bool(active_key),
+):
+    st.caption("هر کاربر کلید خودش را می‌زند و تحلیل با سهمیه‌ی خودش انجام می‌شود. کلید در سرور ذخیره نمی‌شود.")
+    c_prov, c_model = st.columns([1, 1])
+    with c_prov:
+        prov = st.radio("ارائه‌دهنده", ["gemini", "openrouter"],
+                        format_func=lambda p: PROVIDER_FA[p], horizontal=True, key="llm_provider")
+    with c_model:
+        st.text_input("مدل (خالی = خودکار)", key="llm_model",
+                      placeholder=_model_default or "خودکار",
+                      help="Gemini: خالی بگذار تا اولین مدل سالم انتخاب شود. OpenRouter مثل: openai/gpt-4o-mini")
+    entered = st.text_input("کلید API", type="password", value=st.session_state["llm_key"],
+                            placeholder="Gemini: AIza... | OpenRouter: sk-or-...",
+                            label_visibility="collapsed")
+    if entered.strip() != st.session_state["llm_key"]:
+        st.session_state["llm_key"] = entered.strip()
+        st.rerun()
+    b1, b2, b3 = st.columns(3)
+    with b1:
+        if st.button("🔗 ذخیره در لینک"):
+            if not entered.strip():
+                st.warning("اول کلید را وارد کن.")
+            else:
+                st.session_state["llm_key"] = entered.strip()
+                st.query_params["key"] = entered.strip()
+                st.success("ذخیره شد — این صفحه را بوکمارک کن.")
+                st.rerun()
+    with b2:
+        if IS_WINDOWS and st.button("💻 ذخیره در ویندوز"):
+            if not entered.strip():
+                st.warning("اول کلید را وارد کن.")
+            else:
+                try:
+                    import winreg
+                    with winreg.OpenKey(winreg.HKEY_CURRENT_USER, "Environment", 0, winreg.KEY_SET_VALUE) as reg:
+                        winreg.SetValueEx(reg, "GEMINI_API_KEY", 0, winreg.REG_SZ, entered.strip())
+                    st.session_state["llm_key"] = entered.strip()
+                    st.success("در ویندوز ذخیره شد.")
+                    st.rerun()
+                except Exception as e:
+                    st.error(f"ثبت نشد: {e}")
+    with b3:
+        if (_url_key or _session_key) and st.button("🗑️ پاک کردن کلید"):
+            st.session_state.pop("llm_key", None)
+            st.query_params.pop("key", None)
+            st.rerun()
+    if not IS_WINDOWS:
+        st.caption("«ذخیره در ویندوز» فقط روی کامپیوتر خودت است؛ در گوشی از «ذخیره در لینک» استفاده کن.")
+    st.caption("[دریافت کلید رایگان Gemini](https://aistudio.google.com/apikey) • [کلید OpenRouter](https://openrouter.ai)")
+
+_provider = st.session_state["llm_provider"]
+_model = st.session_state["llm_model"].strip() or None
+_session_key = st.session_state["llm_key"].strip()
+_url_key = (st.query_params.get("key") or "").strip()
+_env_key = os.environ.get("OPENROUTER_API_KEY" if _provider == "openrouter" else "GEMINI_API_KEY", "").strip()
+active_key = _url_key or _session_key or _env_key
+
+if not active_key:
+    st.info("هنوز کلیدی فعال نیست — از باکس بالا ارائه‌دهنده و کلید خودت را وارد کن (بدون کلید فقط تحلیل لوکال).")
 
 tab_check, tab_ics, tab_db = st.tabs(["🔍 بررسی داروها", "📅 یادآور تقویم", "📚 بانک دارو"])
 
@@ -95,9 +178,9 @@ with tab_check:
 
     if submitted and drugs_text.strip():
         with st.spinner("در حال تحلیل..."):
-            a = analyze_drugs(drugs_text, order_text)
-            s = build_schedule_unified(drugs_text, order_text, clock)
-            m = missed_dose_unified(drugs_text)
+            a = analyze_drugs(drugs_text, order_text, provider=_provider, model=_model, api_key=active_key or None)
+            s = build_schedule_unified(drugs_text, order_text, clock, provider=_provider, model=_model, api_key=active_key or None)
+            m = missed_dose_unified(drugs_text, provider=_provider, model=_model, api_key=active_key or None)
 
         st.markdown(R.stats_html(a, len(parse_drug_lines(drugs_text))), unsafe_allow_html=True)
         st.markdown(source_badge(a.source), unsafe_allow_html=True)

@@ -7,7 +7,7 @@ import os
 from dataclasses import dataclass
 from typing import Any
 
-from .gemini_engine import GeminiEngine, get_engine
+from .gemini_engine import get_engine, get_llm_engine
 from .interactions import analyze as local_analyze, fa_name
 from .normalize import load_drugs, parse_drug_lines
 from .schedule import (
@@ -104,7 +104,15 @@ def _merge_pairs(local: list, gemini: list) -> list:
     return merged
 
 
-def analyze_drugs(drug_text: str, doctor_order: str = "") -> AnalysisResult:
+def _resolve_key(provider: str, api_key: str | None) -> str:
+    if api_key and api_key.strip():
+        return api_key.strip()
+    env_name = "OPENROUTER_API_KEY" if (provider or "gemini") == "openrouter" else "GEMINI_API_KEY"
+    return os.environ.get(env_name, "").strip()
+
+
+def analyze_drugs(drug_text: str, doctor_order: str = "", *, provider: str = "gemini",
+                  model: str | None = None, api_key: str | None = None) -> AnalysisResult:
     """نقطه ورود اصلی: متن کاربر → تحلیل کامل"""
     # 1) استخراج داروها
     items = parse_drug_lines(drug_text)
@@ -114,12 +122,13 @@ def analyze_drugs(drug_text: str, doctor_order: str = "") -> AnalysisResult:
     # اگر همه داروها در لوکال هستند و تعداد کم است → سریع لوکال
     use_local_first = len(keys) <= 5 and not unmatched and all(k in load_drugs() for k in keys)
 
-    # 2) تلاش Gemini (مگر در حالت آفلاین)
+    # 2) تلاش LLM (مگر در حالت آفلاین/بدون کلید)
     gem_ok = False
     gem_pairs = gem_foods = gem_dups = gem_red = []
-    if os.environ.get("GEMINI_API_KEY"):
+    eff_key = _resolve_key(provider, api_key)
+    if eff_key:
         try:
-            eng = get_engine()
+            eng = get_llm_engine(provider, model, eff_key)
             # شناسایی مجدد با Gemini برای داروهای ناشناخته
             if unmatched:
                 extra = "\n".join(i["raw"] for i in unmatched)
@@ -166,16 +175,19 @@ def analyze_drugs(drug_text: str, doctor_order: str = "") -> AnalysisResult:
     )
 
 
-def build_schedule_unified(drug_text: str, doctor_order: str = "", clock: dict = None) -> ScheduleResult:
+def build_schedule_unified(drug_text: str, doctor_order: str = "", clock: dict = None, *,
+                           provider: str = "gemini", model: str | None = None,
+                           api_key: str | None = None) -> ScheduleResult:
     items = parse_drug_lines(drug_text)
     keys = [i["key"] for i in items if i["key"]]
     unmatched = [i for i in items if not i["key"]]
 
     gem_ok = False
     gem_rows = gem_conf = gem_empty = []
-    if os.environ.get("GEMINI_API_KEY"):
+    eff_key = _resolve_key(provider, api_key)
+    if eff_key:
         try:
-            eng = get_engine()
+            eng = get_llm_engine(provider, model, eff_key)
             if unmatched:
                 extra = "\n".join(i["raw"] for i in unmatched)
                 identified = eng.identify_drugs(extra)
@@ -239,16 +251,18 @@ def build_schedule_unified(drug_text: str, doctor_order: str = "", clock: dict =
     )
 
 
-def missed_dose_unified(drug_text: str) -> dict:
+def missed_dose_unified(drug_text: str, *, provider: str = "gemini",
+                        model: str | None = None, api_key: str | None = None) -> dict:
     items = parse_drug_lines(drug_text)
     keys = [i["key"] for i in items if i["key"]]
     unmatched = [i for i in items if not i["key"]]
 
     gem_ok = False
     gen = spec = []
-    if os.environ.get("GEMINI_API_KEY"):
+    eff_key = _resolve_key(provider, api_key)
+    if eff_key:
         try:
-            eng = get_engine()
+            eng = get_llm_engine(provider, model, eff_key)
             if unmatched:
                 identified_unknown = eng.identify_drugs("\n".join(i["raw"] for i in unmatched))
                 for item in identified_unknown:
