@@ -14,12 +14,21 @@ def e(s) -> str:
     return html.escape(str(s or ""))
 
 
-def stats_html(analysis: dict, n_drugs: int) -> str:
+def _as_dict(obj, *keys) -> dict:
+    """dict یا dataclass (مثل AnalysisResult) → dict. هر دو را قبول می‌کند."""
+    if isinstance(obj, dict):
+        return {k: obj.get(k) for k in keys}
+    return {k: getattr(obj, k, None) for k in keys}
+
+
+def stats_html(analysis, n_drugs: int) -> str:
+    d = _as_dict(analysis, "danger_count", "moderate_count", "foods")
+    foods = d.get("foods") or []
     cells = [
-        ("var(--txt)", to_fa_digits(n_drugs), "داروی بررسی‌شده"),
-        ("var(--danger)", to_fa_digits(analysis["danger_count"]), "تداخل خطرناک"),
-        ("var(--warn)", to_fa_digits(analysis["moderate_count"]), "تداخل متوسط"),
-        ("var(--info)", to_fa_digits(len(analysis["foods"])), "هشدار غذایی"),
+        ("var(--text-main)", to_fa_digits(n_drugs), "داروی بررسی‌شده"),
+        ("var(--ruby-danger)", to_fa_digits(d.get("danger_count") or 0), "تداخل خطرناک"),
+        ("var(--amber-warn)", to_fa_digits(d.get("moderate_count") or 0), "تداخل متوسط"),
+        ("var(--blue-info)", to_fa_digits(len(foods)), "هشدار غذایی"),
     ]
     inner = "".join(
         f'<div class="stat"><div class="n" style="color:{c}">{n}</div><div class="l">{l}</div></div>'
@@ -148,6 +157,11 @@ def spacing_html(tips: list) -> str:
 def empty_stomach_html(conflicts: list) -> str:
     out = []
     for c in conflicts:
+        if isinstance(c, str):
+            # خروجی Gemini لیست رشته است، خروجی لوکال لیست dict — هر دو قبول
+            if c.strip():
+                out.append(alert_html("⚠️", "تداخل ناشتا", c, "moderate"))
+            continue
         out.append(
             alert_html(
                 "⚠️",
