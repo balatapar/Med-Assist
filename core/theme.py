@@ -706,9 +706,14 @@ ul.bullet-list li{
   font-weight: 700 !important;
   border: 1.5px solid #e2e8f0 !important;
   border-bottom: none !important;
-  color: #64748b !important;
+  color: #475569 !important;
   box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.03) !important;
   transition: all .2s ease !important;
+}
+
+.stTabs [data-baseweb="tab"] p,
+.stTabs [data-baseweb="tab"] span{
+  color: #475569 !important;
 }
 
 .stTabs [data-baseweb="tab"]:hover{
@@ -747,7 +752,7 @@ ul.bullet-list li{
 
 .stTextArea textarea::placeholder,
 .stTextInput input::placeholder{
-  color: #94a3b8 !important;
+  color: #64748b !important;
   opacity: 1 !important;
 }
 
@@ -756,6 +761,20 @@ ul.bullet-list li{
 .stNumberInput input:focus{
   border-color: #0d9488 !important;
   box-shadow: 0 0 0 4px rgba(13, 148, 136, 0.2) !important;
+}
+
+/* لیبل‌ها و کپشن‌ها: همیشه تیره و خوانا — در هیچ مرورگر/حالتی محو نمی‌شوند */
+[data-testid="stWidgetLabel"] p,
+.stCheckbox label p,
+.stRadio label p{
+  color: #0f172a !important;
+  font-weight: 700 !important;
+}
+
+.stCaption,
+[data-testid="stCaptionContainer"],
+[data-testid="stCaptionContainer"] p{
+  color: #475569 !important;
 }
 
 /* چیپ‌ها */
